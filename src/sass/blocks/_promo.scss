@@ -1,0 +1,99 @@
+.promo {
+    background-color: #F5F5F5;
+    position: relative;
+
+    @media(max-width: 575px) {
+        background: url(../img/bg_hero_mob.png) center center/cover no-repeat;
+        position: static;
+        min-height: 670px;
+        padding-top: 40px;
+        margin-bottom: 24px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 449px;
+        position: relative;
+
+        @media(max-width: 575px) {
+            flex-direction: column-reverse;
+        }
+
+        &_img {
+            img {
+                width: 100%;
+            }
+        }
+
+        &_text {
+            padding: 79px 0 92px 0;
+
+            @media(max-width: 575px) {
+                padding: 31px 0 17px 0;
+            }
+
+            &-title {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 46px;
+                text-align: left;
+                text-transform: uppercase;
+                color: $main_color;
+                margin: 0;
+
+                @media(max-width: 575px) {
+                    font-size: 40px;
+                    text-align: left;
+                }
+            }
+
+            &-descr {
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 46px;
+                text-align: left;
+                color: $promo_color;
+                padding-top: 17px;
+
+                @media(max-width: 575px) {
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: left;
+                }
+            }
+        }
+
+        &_btn {
+            margin-top: 21px;
+            display: flex;
+            text-transform: uppercase;
+
+            @media(max-width: 575px) {
+                flex-direction: column;
+            }
+
+        }
+
+        .register-btn {
+            width: 186px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            line-height: 56px;
+            margin-left: 35px;
+            text-transform: uppercase;
+
+            @media(max-width: 575px) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &_img {
+        img {
+            max-width: 100%;
+        }
+    }
+}
