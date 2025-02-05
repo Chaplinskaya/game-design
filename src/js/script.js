@@ -8,6 +8,18 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    //Table of content 
+
+    const tableOfContent = document.querySelector('.table_of_content'),
+        tableOfContentList = document.querySelector('.table_of_content-block-list'),
+        svgClick = document.querySelector('.svg-click');
+
+    svgClick.addEventListener('click', () => {
+        tableOfContentList.classList.toggle('table_of_content-block-list-active');
+    });
+
+    //Scroll
+
     $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -82,6 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
 
 
 });
