@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
     //Table of content 
 
     const tableOfContent = document.querySelector('.table_of_content'),
@@ -17,8 +16,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     svgClick.addEventListener('click', () => {
         tableOfContentList.classList.toggle('table_of_content-block-list-active');
+        svgClick.classList.toggle('svg-click-active');
     });
 
+    //$('.svg-click').click(function () {
+    //$('path').attr('d', 'M1.5 2L12 12L22 2');
+    //});
+
+    //Scroll
 
     $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior

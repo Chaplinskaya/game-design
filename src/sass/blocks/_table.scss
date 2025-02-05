@@ -53,6 +53,17 @@
                 }
             }
 
+            .svg-click {
+                //d: path("M1.5 2L12 12L22 2");
+                width: 20.5px;
+                height: 10px;
+                background: url('../img/icon_arrow_down.png') center center/cover no-repeat;
+            }
+
+            .svg-click-active {
+                //d: path("M1.5 12L12 2L22 12" stroke="#191D36");
+                background: url('../img/icon_arrow.png') center center/cover no-repeat;
+            }
         }
 
         &-title {
