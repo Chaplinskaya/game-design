@@ -19,7 +19,7 @@
         flex-direction: column;
         text-transform: none;
         line-height: 30px;
-        width: 1060px;
+        max-width: 1060px;
 
         @media(max-width: 575px) {
             font-size: 14px;
