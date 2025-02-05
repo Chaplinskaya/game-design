@@ -10,6 +10,8 @@
 
     &_of_content {
         position: relative;
+        background-color: #E9E9E9;
+        height: 100%;
 
         @media(max-width: 575px) {}
 
@@ -41,13 +43,15 @@
             &-list-active {
                 background-color: #fff;
                 position: absolute;
-                top: 50px;
+                top: 40px;
                 right: 0;
                 width: 100%;
                 //height: 100%;
                 cursor: pointer;
                 display: block;
                 transition: 0.8s all;
+                border: 5px solid #E9E9E9;
+                border-radius: 7px;
 
                 li {
                     list-style-type: none;
