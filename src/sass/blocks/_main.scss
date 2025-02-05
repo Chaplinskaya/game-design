@@ -94,6 +94,10 @@
         text-transform: uppercase;
         display: block;
         margin: 0 auto;
+
+        @media(max-width: 350px) {
+            margin-top: 35px;
+        }
     }
 
     &__quality {
@@ -101,10 +105,12 @@
 
         @media(max-width: 575px) {
             margin-bottom: 50px;
+            margin-top: 40px;
         }
 
         .main__title {
             margin-bottom: 48px;
+
         }
 
         &_block {
@@ -342,6 +348,13 @@
             img {
                 width: 100%;
             }
+        }
+
+    }
+
+    .aspects-btn {
+        @media(max-width: 575px) {
+            margin-bottom: 35px;
         }
     }
 
