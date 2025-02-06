@@ -115,6 +115,7 @@
     transition: 0.8s all;
     border: 5px solid #E9E9E9;
     border-radius: 7px;
+    z-index: 12;
 
     li {
         list-style-type: none;
@@ -147,6 +148,10 @@
     }
 }
 
+.faq .table_of_content-block-list-active {
+    top: 60px;
+}
+
 .svg-click {
     //d: path("M1.5 2L12 12L22 2");
     width: 20.5px;
@@ -157,6 +162,8 @@
 
 .svg-click-active {
     //d: path("M1.5 12L12 2L22 12" stroke="#191D36");
+    width: 20.5px;
+    height: 10px;
     background: url('../img/icon_arrow.png') center center/cover no-repeat;
     transition: 0.8s all;
 }

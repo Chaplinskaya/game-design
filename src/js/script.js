@@ -11,13 +11,29 @@ window.addEventListener('DOMContentLoaded', () => {
     //Table of content 
 
     const tableOfContent = document.querySelector('.table_of_content'),
-        tableOfContentList = document.querySelector('.table_of_content-block-list'),
-        svgClick = document.querySelector('.svg-click');
+        tableOfContentList = document.querySelectorAll('.table_of_content-block-list'),
+        svgClick = document.querySelectorAll('.svg-click');
 
-    svgClick.addEventListener('click', () => {
-        tableOfContentList.classList.toggle('table_of_content-block-list-active');
-        svgClick.classList.toggle('svg-click-active');
+    //svgClick.addEventListener('click', () => {
+    //tableOfContentList.classList.toggle('table_of_content-block-list-active');
+    //svgClick.classList.toggle('svg-click-active');
+    //});
+
+    svgClick.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('svg-click-active');
+            tableOfContentList.forEach(item => {
+                item.classList.toggle('table_of_content-block-list-active');
+
+            });
+        });
     });
+    //tableOfContentList.forEach(item => {
+    //item.addEventListener('click', () => {
+    //tableOfContentList.classList.toggle('table_of_content-block-list-active');
+    //});
+    //});
+
 
     //$('.svg-click').click(function () {
     //$('path').attr('d', 'M1.5 2L12 12L22 2');
