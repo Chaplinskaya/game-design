@@ -1,0 +1,26 @@
+.error__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_text {
+        font-size: 220px;
+        font-weight: 900;
+        line-height: 264px;
+        color: $main_color;
+
+        span {
+            font-size: 60px;
+            font-weight: 900;
+            line-height: 72px;
+            color: $main_color;
+        }
+    }
+
+    &_btn {
+        width: 259px;
+        height: 55px;
+        margin-bottom: 141px;
+    }
+
+}
